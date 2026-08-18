@@ -1,0 +1,59 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Keyboard Base Shape -->
+    <path
+        android:fillColor="#FF0F172A"
+        android:pathData="M24,30 h60 a8,8 0 0,1 8,8 v34 a8,8 0 0,1 -8,8 h-60 a8,8 0 0,1 -8,-8 v-34 a8,8 0 0,1 8,-8 z" />
+    <path
+        android:fillColor="#3338BDF8"
+        android:strokeColor="#FF38BDF8"
+        android:strokeWidth="1.5"
+        android:pathData="M24,30 h60 a8,8 0 0,1 8,8 v34 a8,8 0 0,1 -8,8 h-60 a8,8 0 0,1 -8,-8 v-34 a8,8 0 0,1 8,-8 z" />
+    <!-- Keyboard Keys Row 1 -->
+    <path
+        android:fillColor="#FF1E293B"
+        android:strokeColor="#FF475569"
+        android:strokeWidth="0.8"
+        android:pathData="M28,36 h10 a2,2 0 0,1 2,2 v8 a2,2 0 0,1 -2,2 h-10 a2,2 0 0,1 -2,-2 v-8 a2,2 0 0,1 2,-2 z" />
+    <path
+        android:fillColor="#FF0284C7"
+        android:pathData="M43,36 h10 a2,2 0 0,1 2,2 v8 a2,2 0 0,1 -2,2 h-10 a2,2 0 0,1 -2,-2 v-8 a2,2 0 0,1 2,-2 z" />
+    <path
+        android:fillColor="#FF1E293B"
+        android:strokeColor="#FF475569"
+        android:strokeWidth="0.8"
+        android:pathData="M58,36 h10 a2,2 0 0,1 2,2 v8 a2,2 0 0,1 -2,2 h-10 a2,2 0 0,1 -2,-2 v-8 a2,2 0 0,1 2,-2 z" />
+    <path
+        android:fillColor="#FF1E293B"
+        android:strokeColor="#FF475569"
+        android:strokeWidth="0.8"
+        android:pathData="M73,36 h7 a2,2 0 0,1 2,2 v8 a2,2 0 0,1 -2,2 h-7 a2,2 0 0,1 -2,-2 v-8 a2,2 0 0,1 2,-2 z" />
+    <!-- Keyboard Keys Row 2 -->
+    <path
+        android:fillColor="#FF1E293B"
+        android:strokeColor="#FF475569"
+        android:strokeWidth="0.8"
+        android:pathData="M28,50 h12 a2,2 0 0,1 2,2 v8 a2,2 0 0,1 -2,2 h-12 a2,2 0 0,1 -2,-2 v-8 a2,2 0 0,1 2,-2 z" />
+    <path
+        android:fillColor="#FF1E293B"
+        android:strokeColor="#FF475569"
+        android:strokeWidth="0.8"
+        android:pathData="M44,50 h20 a2,2 0 0,1 2,2 v8 a2,2 0 0,1 -2,2 h-20 a2,2 0 0,1 -2,-2 v-8 a2,2 0 0,1 2,-2 z" />
+    <path
+        android:fillColor="#FF38BDF8"
+        android:pathData="M68,50 h12 a2,2 0 0,1 2,2 v8 a2,2 0 0,1 -2,2 h-12 a2,2 0 0,1 -2,-2 v-8 a2,2 0 0,1 2,-2 z" />
+    <!-- Keyboard Keys Row 3 (Spacebar) -->
+    <path
+        android:fillColor="#FF0284C7"
+        android:pathData="M38,64 h32 a2,2 0 0,1 2,2 v6 a2,2 0 0,1 -2,2 h-32 a2,2 0 0,1 -2,-2 v-6 a2,2 0 0,1 2,-2 z" />
+    <!-- Glowing Sinhala 'ල' Badge Accent -->
+    <path
+        android:fillColor="#FF38BDF8"
+        android:pathData="M54,20 m-6,0 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M52,18 h4 v4 h-4 z" />
+</vector>

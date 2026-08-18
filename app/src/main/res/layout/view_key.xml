@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/key_root"
+    android:layout_width="0dp"
+    android:layout_height="48dp"
+    android:layout_weight="1"
+    android:layout_margin="2.5dp"
+    android:background="@drawable/sel_key_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+    <!-- Secondary Hint Label (Top-Right: Digits & Symbols) -->
+    <TextView
+        android:id="@+id/tv_sub_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/key_subtext_color"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:visibility="gone" />
+
+    <!-- Primary Letter / Glyph Label (Center) -->
+    <TextView
+        android:id="@+id/tv_main_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/key_text_color"
+        android:textSize="19sp"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif-medium"
+        android:includeFontPadding="false" />
+
+    <!-- Icon View for Function / System Keys -->
+    <ImageView
+        android:id="@+id/iv_key_icon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_root_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/laka_bg_dark">
+
+    <!-- Layer 1: Custom Image/Photo Background (Optional) -->
+    <ImageView
+        android:id="@+id/iv_keyboard_custom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <!-- Layer 2: Frosted Glass / Translucent Dark Overlay (#80101820) -->
+    <View
+        android:id="@+id/view_glass_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/keyboard_glass_overlay" />
+
+    <!-- Layer 3: Keyboard Rows Stack -->
+    <LinearLayout
+        android:id="@+id/keyboard_rows_stack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <!-- ============================================================== -->
+        <!-- ROW 0: Top Utility Bar (Circular Action Chips)                -->
+        <!-- ============================================================== -->
+        <LinearLayout
+            android:id="@+id/row_utility_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="2dp">
+
+            <!-- 1. Language Toggle "En" / "සිං" -->
+            <FrameLayout
+                android:id="@+id/chip_lang_toggle"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/sel_utility_circle"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/tv_chip_lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="En"
+                    android:textColor="@color/utility_chip_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- 2. Emoji Picker -->
+            <FrameLayout
+                android:id="@+id/chip_emoji_picker"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/sel_utility_circle"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_ime_emoji"
+                    android:contentDescription="Emoji Picker" />
+            </FrameLayout>
+
+            <!-- 3. Theme / Dark Mode -->
+            <FrameLayout
+                android:id="@+id/chip_theme"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/sel_utility_circle"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_ime_palette"
+                    android:contentDescription="Theme Selector" />
+            </FrameLayout>
+
+            <!-- 4. Clipboard History -->
+            <FrameLayout
+                android:id="@+id/chip_clipboard"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/sel_utility_circle"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_ime_clipboard"
+                    android:contentDescription="Clipboard" />
+            </FrameLayout>
+
+            <!-- 5. Font / Text Styler "Aa" -->
+            <FrameLayout
+                android:id="@+id/chip_font_styler"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/sel_utility_circle"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Aa"
+                    android:textColor="@color/utility_chip_text"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- 6. Cursor Navigation Tool -->
+            <FrameLayout
+                android:id="@+id/chip_cursor_tool"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/sel_utility_circle"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_ime_cursor"
+                    android:contentDescription="Cursor Tool" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- 7. Collapse / Dropdown -->
+            <FrameLayout
+                android:id="@+id/chip_collapse"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:background="@drawable/sel_utility_circle"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_ime_collapse"
+                    android:contentDescription="Hide Keyboard" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- ============================================================== -->
+        <!-- ROW 1: Quick Emoji Ribbon (Horizontal Strip)                  -->
+        <!-- ============================================================== -->
+        <HorizontalScrollView
+            android:id="@+id/scroll_emoji_ribbon"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:scrollbars="none"
+            android:fadingEdge="horizontal"
+            android:requiresFadingEdge="horizontal"
+            android:fadingEdgeLength="16dp"
+            android:layout_marginBottom="4dp">
+
+            <LinearLayout
+                android:id="@+id/container_emoji_ribbon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp">
+                <!-- Programmatically or statically populated with [❤️] [😂] [😊] [😏] [😒] [😌] [🥺] [🥲] [😮‍💨] [😁] -->
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- ============================================================== -->
+        <!-- ROW 2: QWERTY Numbers Row (Q..P with 1..0 sub-labels)          -->
+        <!-- ============================================================== -->
+        <LinearLayout
+            android:id="@+id/row_qwerty_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center" />
+
+        <!-- ============================================================== -->
+        <!-- ROW 3: Home Row (A..L with @, #, $, -, &, _, +, (, ) sub-labels)-->
+        <!-- ============================================================== -->
+        <LinearLayout
+            android:id="@+id/row_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <!-- ============================================================== -->
+        <!-- ROW 4: Bottom Row ([Shift], Z..M, [Backspace])                -->
+        <!-- ============================================================== -->
+        <LinearLayout
+            android:id="@+id/row_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" />
+
+        <!-- ============================================================== -->
+        <!-- ROW 5: Action Bar ([123], [Globe], [,], [Space], [.], [Enter]) -->
+        <!-- ============================================================== -->
+        <include
+            android:id="@+id/included_action_bar"
+            layout="@layout/view_action_bar" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,6 @@
+{
+  "name": "LakaBoard",
+  "description": "Smart Sinhala keyboard with live Singlish transliteration, Wijesekara layout, custom themes, and sound effects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

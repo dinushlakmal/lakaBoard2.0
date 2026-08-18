@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="3dp"
+    android:paddingEnd="3dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="4dp">
+
+    <!-- 123 / Symbols Mode Button -->
+    <FrameLayout
+        android:id="@+id/key_sym_mode"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:layout_margin="2.5dp"
+        android:background="@drawable/sel_key_background"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/tv_sym_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/key_label_sym_mode"
+            android:textColor="@color/key_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium" />
+    </FrameLayout>
+
+    <!-- Globe / Language Switcher Button -->
+    <FrameLayout
+        android:id="@+id/key_globe"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:layout_margin="2.5dp"
+        android:background="@drawable/sel_key_background"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_ime_globe"
+            android:contentDescription="Language Switcher" />
+    </FrameLayout>
+
+    <!-- Comma Key -->
+    <FrameLayout
+        android:id="@+id/key_comma"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:layout_margin="2.5dp"
+        android:background="@drawable/sel_key_background"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=","
+            android:textColor="@color/key_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!-- Spacebar (Flashboard / Custom centered branding) -->
+    <FrameLayout
+        android:id="@+id/key_spacebar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4.0"
+        android:layout_margin="2.5dp"
+        android:background="@drawable/sel_space_key"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/tv_spacebar_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/key_label_spacebar"
+            android:textColor="@color/key_subtext_color"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.04" />
+    </FrameLayout>
+
+    <!-- Period / Dot Key -->
+    <FrameLayout
+        android:id="@+id/key_period"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:layout_margin="2.5dp"
+        android:background="@drawable/sel_key_background"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="."
+            android:textColor="@color/key_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!-- Blue Return / Enter Action Button -->
+    <FrameLayout
+        android:id="@+id/key_enter"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.4"
+        android:layout_margin="2.5dp"
+        android:background="@drawable/sel_enter_key"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/iv_enter_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_ime_return"
+            android:contentDescription="Enter" />
+    </FrameLayout>
+
+</LinearLayout>

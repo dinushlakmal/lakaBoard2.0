@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors -->
+    <color name="laka_gold">#F5C34D</color>
+    <color name="laka_bg_dark">#0B0B12</color>
+    <color name="laka_bg_light">#EFF4F8</color>
+
+    <!-- Frosted Glass Keyboard Theme -->
+    <color name="keyboard_glass_overlay">#80101820</color>
+    <color name="key_normal_bg">#4D3A4452</color>
+    <color name="key_pressed_bg">#805A697B</color>
+    <color name="key_border_stroke">#26FFFFFF</color>
+    <color name="key_text_color">#FFFFFF</color>
+    <color name="key_subtext_color">#90A4AE</color>
+    <color name="key_enter_bg_start">#1D1EFF</color>
+    <color name="key_enter_bg_end">#0D47A1</color>
+    <color name="key_enter_pressed">#0A3880</color>
+    <color name="utility_chip_bg">#33252E38</color>
+    <color name="utility_chip_stroke">#2EFFFFFF</color>
+    <color name="utility_chip_pressed">#664A5768</color>
+    <color name="utility_chip_text">#F0F4F8</color>
+    <color name="emoji_ribbon_bg">#20000000</color>
+</resources>
