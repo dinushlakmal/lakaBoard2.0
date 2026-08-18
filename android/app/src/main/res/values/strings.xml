@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LakaBoard</string>
+    <string name="subtype_singlish">Sinhala (Singlish)</string>
+    <string name="subtype_wijesekara">Sinhala (Wijesekara)</string>
+    <string name="subtype_english">English (QWERTY)</string>
+
+    <string name="enable_keyboard">Enable LakaBoard</string>
+    <string name="switch_keyboard">Switch Keyboard</string>
+    <string name="theme_customizer_title">Customize Theme</string>
+    <string name="transliteration_guide_title">Singlish Transliteration Guide</string>
+
+    <string name="theme_cyber_dark">Cyber Dark</string>
+    <string name="theme_emerald_gold">Emerald Gold</string>
+    <string name="theme_neon_sunset">Neon Sunset</string>
+    <string name="theme_amoled_black">AMOLED Pure Black</string>
+    <string name="theme_arctic_light">Arctic Light</string>
+
+    <string name="sound_mechanical">Mechanical Click</string>
+    <string name="sound_bubble">Soft Bubble</string>
+    <string name="sound_pop">Modern Pop</string>
+    <string name="sound_typewriter">Typewriter</string>
+
+    <string name="clipboard_empty">Copied text will appear here</string>
+</resources>
